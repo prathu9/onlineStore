@@ -51,8 +51,13 @@ class NavBar extends Component{
 		return(
 
 			<div className="nav_wrapper">
+				
+
+				
 				<div className="nav_container">
-					<div className="sideNavBar" style={{display:`${this.state.sideDisplay}`}}>
+
+				<div className="overlay" style={{display:`${this.state.sideDisplay}`}}>
+					<div className="sideNavBar" >
 					<Button 
 						className={"navCloseBtn"}
 						value={"X close"}
@@ -84,9 +89,14 @@ class NavBar extends Component{
 						<Li url={`#Blog`}value="BLOG"/>
 					</ul>
 				</div>
+				</div>
 					<Button 
 						styles={menuBtnStyle} 
-						className={`glyphicon glyphicon-menu-hamburger`}
+						className={`unclickable glyphicon glyphicon-menu-hamburger`}
+						/>
+					<Button 
+						styles={menuBtnStyle} 
+						className={`clickable glyphicon glyphicon-menu-hamburger`}
 						clickFunc={this.showSideBar}/>
 					<ul className="nav_list">
 						<Li url={`#Home`} value="HOME"/>
