@@ -1,7 +1,7 @@
 {
-  "main.css": "/onlinestore/static/css/main.d1e8ae69.chunk.css",
-  "main.js": "/onlinestore/static/js/main.0e7b92e5.chunk.js",
-  "main.js.map": "/onlinestore/static/js/main.0e7b92e5.chunk.js.map",
+  "main.css": "/onlinestore/static/css/main.4a821370.chunk.css",
+  "main.js": "/onlinestore/static/js/main.5b5ff2f9.chunk.js",
+  "main.js.map": "/onlinestore/static/js/main.5b5ff2f9.chunk.js.map",
   "static/js/1.22d077c7.chunk.js": "/onlinestore/static/js/1.22d077c7.chunk.js",
   "static/js/1.22d077c7.chunk.js.map": "/onlinestore/static/js/1.22d077c7.chunk.js.map",
   "runtime~main.js": "/onlinestore/static/js/runtime~main.9b4edc31.js",
@@ -11,8 +11,8 @@
   "static/media/img4.jpg": "/onlinestore/static/media/img4.e37abeef.jpg",
   "static/media/usd.jpg": "/onlinestore/static/media/usd.cc9a7b7f.jpg",
   "static/media/img2.jpg": "/onlinestore/static/media/img2.cb7e73a4.jpg",
-  "static/css/main.d1e8ae69.chunk.css.map": "/onlinestore/static/css/main.d1e8ae69.chunk.css.map",
+  "static/css/main.4a821370.chunk.css.map": "/onlinestore/static/css/main.4a821370.chunk.css.map",
   "index.html": "/onlinestore/index.html",
-  "precache-manifest.b115556dfc96b2f5baa6cd2268baa71f.js": "/onlinestore/precache-manifest.b115556dfc96b2f5baa6cd2268baa71f.js",
+  "precache-manifest.45095f2a415379e639019af108a5760d.js": "/onlinestore/precache-manifest.45095f2a415379e639019af108a5760d.js",
   "service-worker.js": "/onlinestore/service-worker.js"
 }
