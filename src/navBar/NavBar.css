@@ -1,0 +1,89 @@
+.nav_wrapper{
+	padding:20px initial;
+	border-top:2px solid #000;
+	border-bottom:2px solid #000;
+	width:100%;
+	min-width:360px;
+	padding:10px 0;
+	position:relative;
+}
+
+.nav_container{
+	width:inherit;
+	max-width:1600px;
+	min-width:360px;
+	margin:0 auto;
+	display:flex;
+	justify-content:space-between;
+
+}
+
+.nav_list{
+	list-style-type:none;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin:0;
+}
+
+.nav_list a{
+	
+	width:150px;
+	text-decoration:none;
+	color:#000;
+	font-weight:500;
+	font-size:1.4em;
+	padding:5px 10px;
+	text-align:center;
+
+}
+
+.sideNavBar{
+	position:absolute;
+	background-color:lightblue;
+	width:250px;
+	height:550px;
+	padding-top:10px;
+	background-color:#0F5A6E;
+	color:#fff;
+	top:0;
+	left:0;
+	z-index:5;
+}
+
+.navCloseBtn{
+	width:80px;
+	height:25px;
+	border:none;
+	background-color:transparent;
+	border-radius:25px;
+	font-size:1.2em;
+	font-weight:700;
+}
+
+.sideNavBar .nav_list{
+	width:inherit;
+	height:inherit;
+	display:flex;
+	flex-direction:column;
+	padding:0;
+
+}
+
+.sideNavBar .nav_list a{
+	padding:20px 0;
+	width:100%;
+	color:#fff;
+}
+
+.sideNavBar .nav_list a:hover{
+	background-color:#BDD7DE;
+	color:#000;
+}
+
+
+@media screen and (max-width:860px){
+	.nav_list{
+		display:none;
+	}
+}
