@@ -23,7 +23,7 @@
 }
 
 .countryBtn{
-	margin-top:20px;
+	margin-top:10px;
 }
 
 .glyphicon-shopping-cart{
@@ -65,7 +65,7 @@
 	.countryBtn{
 		position:absolute;
 		right:80px;
-		margin-top:25px;
+		margin-top:15px;
 	}
 	.cartName{
 
@@ -76,7 +76,7 @@
 		height:100%;
 		border:0;
 		padding:0;
-		margin-top:25px;
+		margin-top:15px;
 
 	}
 }
