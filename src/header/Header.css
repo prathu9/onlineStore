@@ -2,14 +2,11 @@
 	box-sizing:border-box;
 }
 
-h1{
-	
-}
-
 .header_wrapper{
 	width:100%;
 	min-width:360px;
 }
+
 .header_container{
 	position:relative;
 	display:flex;
