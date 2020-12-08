@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/onlinestore-template/static/css/main.10d10966.chunk.css",
-    "main.js": "/onlinestore-template/static/js/main.587d99c5.chunk.js",
-    "main.js.map": "/onlinestore-template/static/js/main.587d99c5.chunk.js.map",
+    "main.js": "/onlinestore-template/static/js/main.d3fb8340.chunk.js",
+    "main.js.map": "/onlinestore-template/static/js/main.d3fb8340.chunk.js.map",
     "runtime-main.js": "/onlinestore-template/static/js/runtime-main.3fd15396.js",
     "runtime-main.js.map": "/onlinestore-template/static/js/runtime-main.3fd15396.js.map",
-    "static/js/2.91b66e97.chunk.js": "/onlinestore-template/static/js/2.91b66e97.chunk.js",
-    "static/js/2.91b66e97.chunk.js.map": "/onlinestore-template/static/js/2.91b66e97.chunk.js.map",
+    "static/js/2.585b2406.chunk.js": "/onlinestore-template/static/js/2.585b2406.chunk.js",
+    "static/js/2.585b2406.chunk.js.map": "/onlinestore-template/static/js/2.585b2406.chunk.js.map",
     "index.html": "/onlinestore-template/index.html",
     "static/css/main.10d10966.chunk.css.map": "/onlinestore-template/static/css/main.10d10966.chunk.css.map",
-    "static/js/2.91b66e97.chunk.js.LICENSE.txt": "/onlinestore-template/static/js/2.91b66e97.chunk.js.LICENSE.txt",
-    "static/media/img1.jpg": "/onlinestore-template/static/media/img1.726075be.jpg",
-    "static/media/img2.jpg": "/onlinestore-template/static/media/img2.82f37357.jpg",
-    "static/media/img3.jpg": "/onlinestore-template/static/media/img3.27fb0eb0.jpg",
-    "static/media/img4.jpg": "/onlinestore-template/static/media/img4.9a990197.jpg",
-    "static/media/usd.jpg": "/onlinestore-template/static/media/usd.4cae5091.jpg"
+    "static/js/2.585b2406.chunk.js.LICENSE.txt": "/onlinestore-template/static/js/2.585b2406.chunk.js.LICENSE.txt",
+    "static/media/img1.726075be.jpg": "/onlinestore-template/static/media/img1.726075be.jpg",
+    "static/media/img2.82f37357.jpg": "/onlinestore-template/static/media/img2.82f37357.jpg",
+    "static/media/img3.27fb0eb0.jpg": "/onlinestore-template/static/media/img3.27fb0eb0.jpg",
+    "static/media/img4.9a990197.jpg": "/onlinestore-template/static/media/img4.9a990197.jpg",
+    "static/media/usd.4cae5091.jpg": "/onlinestore-template/static/media/usd.4cae5091.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.3fd15396.js",
-    "static/js/2.91b66e97.chunk.js",
+    "static/js/2.585b2406.chunk.js",
     "static/css/main.10d10966.chunk.css",
-    "static/js/main.587d99c5.chunk.js"
+    "static/js/main.d3fb8340.chunk.js"
   ]
 }
