@@ -1,12 +1,16 @@
 import React,{Component} from "react";
 import Img from "../imageElement/image.js";
+import img1 from "./images/img1.jpg";
+import img2 from "./images/img2.jpg";
+import img3 from "./images/img3.jpg";
+import img4 from "./images/img4.jpg";
 class ImgDisplay extends Component{
 
 constructor(){
 	super();
 	this.state={
 			currentProduct:"img1",
-			img:"img1"
+			img:img1
 		}
 	}
 changeImg=(image,e)=>{
@@ -24,7 +28,6 @@ componentDidMount(){
 
 
 render(){
-
 			return(
 				<div className="imgDisplay_container">
 					<div className="imgTitle">
@@ -40,29 +43,29 @@ render(){
 					</div>
 					</div>
 					<div className="main_img">
-						<Img source={require("../content/images/"+this.state.img+".jpg")}/>
+						<Img source={this.state.img}/>
 					</div>
 					<div className="other_imgs">
-						<div onClick={(e) => this.changeImg("img1", e)}
+						<div onClick={(e) => this.changeImg(img1, e)}
 						 style={this.state.style}>
 
 							<Img 
-							source={require("../content/images/img1.jpg")}/>
+							source={img1}/>
 						</div>
 
-						<div onClick={(e) => this.changeImg("img2", e)}>
+						<div onClick={(e) => this.changeImg(img2, e)}>
 							<Img  
-							source={require("../content/images/img2.jpg")}/>
+							source={img2}/>
 						</div>
 
-						<div onClick={(e) => this.changeImg("img3", e)}>
+						<div onClick={(e) => this.changeImg(img3, e)}>
 							<Img 
-							source={require("../content/images/img3.jpg")}/>
+							source={img3}/>
 						</div>
 
-						<div onClick={(e) => this.changeImg("img4", e)}>
+						<div onClick={(e) => this.changeIm(img4, e)}>
 							<Img 
-							source={require("../content/images/img4.jpg")}/>
+							source={img4}/>
 						</div>
 					</div>
 				</div>
