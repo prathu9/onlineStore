@@ -63,7 +63,7 @@ render(){
 							source={img3}/>
 						</div>
 
-						<div onClick={(e) => this.changeIm(img4, e)}>
+						<div onClick={(e) => this.changeImg(img4, e)}>
 							<Img 
 							source={img4}/>
 						</div>
