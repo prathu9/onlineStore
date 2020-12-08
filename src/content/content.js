@@ -26,7 +26,8 @@ class content extends Component{
 					<ImgInfo 
 						getCartItem={this.props.getCartItem}
 						getCartInfo={this.props.getCartInfo}
-						currentProductImg={this.state.img}/>
+						currentProductImg={this.state.img}
+						flag={this.props.flag}/>
 					
 				</div>
 			</div>

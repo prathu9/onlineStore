@@ -46,7 +46,9 @@ class ImgInfo extends Component{
 						 3Reviews(s) | <a href="#review" style={{textDecoration:"underline",color:"#000"}}>ADD A REVIEW</a>	
 					</div>
 				</div>
-				<p style={{fontSize:"1.7em"}}>$499.00</p>
+				<p style={{fontSize:"1.7em"}}>
+					{this.props.flag==="usd"?`$199`:`Rs 9,999`}
+				</p>
 				<ul>
 					<li><span style={{fontWeight:"bold"}}>Availabilty</span>:In stock</li>
 					<li><span style={{fontWeight:"bold"}}>Product Code</span>:#4657</li>

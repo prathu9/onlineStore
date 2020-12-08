@@ -5,6 +5,7 @@ import Content from "../content/content.js";
 import ShowCart from "../showInCart/showCartPopup";
 import './App.css';
 
+
 class App extends Component{
 
   constructor(){
@@ -14,9 +15,20 @@ class App extends Component{
       productColor:"",
       productSize:"",
       productImg:"",
-  	 	showCartDisplay:"none"
+      showCartDisplay:"none",
+      flag:"usd"
   	}
   }
+
+  changeFlag=()=>{
+		if(this.state.flag==="usd"){
+			this.setState({flag:"inr"});
+		}
+		else{
+			this.setState({flag:"usd"})
+
+		}
+	}
 
   getCartItem=(noOfCartItem)=>{
   	noOfCartItem=parseInt(noOfCartItem);
@@ -51,11 +63,16 @@ class App extends Component{
         <div>
             <Header 
               cartItem={this.state.cartItem} 
-              showCart={this.showCart}/>
+              showCart={this.showCart}
+              flag={this.state.flag}
+              handleFlagToggle={this.changeFlag}
+              />
             <NavBar />
             <Content 
               getCartItem={this.getCartItem}
-              getCartInfo={this.getCartInfo}/>
+              getCartInfo={this.getCartInfo}
+              flag={this.state.flag}
+              />
             <ShowCart 
               toggleDisplay={this.state.showCartDisplay}
               image={this.state.productImg}

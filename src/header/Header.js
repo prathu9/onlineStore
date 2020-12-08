@@ -1,53 +1,35 @@
 import React,{Component} from "react";
 import Button from "../button/button";
 import "./Header.css";
-import INR from './images/inr.jpg';
-import USD from './images/usd.jpg';
+import INR from '../header/images/inr.jpg';
+import USD from '../header/images/usd.jpg';
 
 
-class Header extends Component{
+const Header = (props)=>{
 
-	constructor(){
-		super();
-		this.state={
-			flag:USD
-		}
-	}
+	const flag = props.flag==="usd"?USD:INR;
 
-	changeFlag=()=>{
-		if(this.state.flag===USD){
-			this.setState({flag:INR});
-		}
-		else{
-			this.setState({flag:USD})
-
-		}
-	}
-
-
-	render(){
-
-		const buttonValue=(()=>{
-			return(
-				<span>
-					<span 
-						className="glyphicon glyphicon-shopping-cart">
-					</span>
-					<span className="cartName">
-						Cart
-					</span>
-					<span className="cartValue">
-						({this.props.cartItem})
-					</span>
-				</span>
-			)
-		})();
+	const buttonValue=(()=>{
 		return(
-			<div className="header_wrapper">
+			<span>
+				<span 
+					className="glyphicon glyphicon-shopping-cart">
+				</span>
+				<span className="cartName">
+					Cart
+				</span>
+				<span className="cartValue">
+					({props.cartItem})
+				</span>
+			</span>
+		)
+	})();
+	console.log(props.flag);
+		return(<div className="header_wrapper">
 				<div className="header_container">
 				<div className="countryBtn">
-					<img src={this.state.flag} alt="" width="40px" height="30px"/>
-					<select onChange={this.changeFlag} style={{border:"0"}}>
+					<img src={flag} alt="" width="40px" height="30px"/>
+					<select onChange={props.handleFlagToggle} style={{border:"0"}}>
 						<option>USD</option>
 						<option>INR</option>
 					</select>
@@ -59,12 +41,11 @@ class Header extends Component{
 						<Button 
 							className="addCartBtn"
 							value={buttonValue}
-							clickFunc={this.props.showCart}/>	
+							clickFunc={props.showCart}/>	
 					</div>
 				</div>
 			</div>
 		);
-	}
 }
 
 
