@@ -2,16 +2,18 @@ import React from "react";
 import Button from "../button/button";
 import 	Img from "../imageElement/image";
 import "./showCartPopup.css";
-const ShowCart=({toggleDisplay, hideCart,image,cartItem})=>{
+const ShowCart=({toggleDisplay, hideCart,image,cartItem,flag})=>{
 
-	
+	const currency =  flag==="usd"? `$ ${cartItem*199}` : `Rs ${cartItem*9999}` ;
+	const displayCurrency = flag==="usd"?"$ 199":"Rs 9999";
 
 	const itemCheck=()=>{
+		console.log(image);
 		if(image){
 			return (
 				<div className="itemInCartContainer">
 					<div className="itemInCart">
-							<Img source={require(`../content/images/${image}.jpg`)}/>
+							<Img source={image}/>
 					</div>
 					<div className="itemInCartInfo">
 						<h2>The Ateliar Tailored Coat</h2>
@@ -19,7 +21,9 @@ const ShowCart=({toggleDisplay, hideCart,image,cartItem})=>{
 							<tbody>
 								<tr>
 									<td>Price:</td>
-									<td className="col-2">$499</td>
+									<td className="col-2">
+										{displayCurrency}
+									</td>
 								</tr>
 								<tr>
 									<td>Quantity:</td>
@@ -27,7 +31,7 @@ const ShowCart=({toggleDisplay, hideCart,image,cartItem})=>{
 								</tr>
 								<tr>
 									<td>Total:</td>
-									<td className="col-2">${cartItem*499}</td>
+									<td className="col-2">{currency}</td>
 								</tr>
 							</tbody>
 						</table>

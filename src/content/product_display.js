@@ -9,7 +9,7 @@ class ImgDisplay extends Component{
 constructor(){
 	super();
 	this.state={
-			currentProduct:"img1",
+			currentProduct:img1,
 			img:img1
 		}
 	}

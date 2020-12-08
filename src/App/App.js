@@ -79,7 +79,9 @@ class App extends Component{
               color={this.state.productColor}
               size={this.state.productSize}
               cartItem={this.state.cartItem} 
-              hideCart={this.hideCart}/>
+              hideCart={this.hideCart}
+              flag={this.state.flag}
+              />
         </div>
 
     );
