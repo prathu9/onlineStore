@@ -2,7 +2,7 @@
   "name": "online-store",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://prathu9.github.io/onlinestore/",
+  "homepage": "https://prathu9.github.io/onlinestore-template/",
   "dependencies": {
     "gh-pages": "^2.2.0",
     "react": "^16.13.1",
