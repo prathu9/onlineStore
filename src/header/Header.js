@@ -1,6 +1,8 @@
 import React,{Component} from "react";
 import Button from "../button/button";
 import "./Header.css";
+import INR from './images/inr.jpg';
+import USD from './images/usd.jpg';
 
 
 class Header extends Component{
@@ -8,16 +10,16 @@ class Header extends Component{
 	constructor(){
 		super();
 		this.state={
-			flag:"usd"
+			flag:USD
 		}
 	}
 
 	changeFlag=()=>{
-		if(this.state.flag==="usd"){
-			this.setState({flag:"inr"});
+		if(this.state.flag===USD){
+			this.setState({flag:INR});
 		}
 		else{
-			this.setState({flag:"usd"})
+			this.setState({flag:USD})
 
 		}
 	}
@@ -44,7 +46,7 @@ class Header extends Component{
 			<div className="header_wrapper">
 				<div className="header_container">
 				<div className="countryBtn">
-					<img src={require(`./images/${this.state.flag}.jpg`)} alt="" width="40px" height="30px"/>
+					<img src={this.state.flag} alt="" width="40px" height="30px"/>
 					<select onChange={this.changeFlag} style={{border:"0"}}>
 						<option>USD</option>
 						<option>INR</option>
